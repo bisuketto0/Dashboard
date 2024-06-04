@@ -13,13 +13,13 @@ body {
   font-family: "Raleway", 'Inter', Verdana, Tahoma, sans-serif;
   font-size: 1rem;
   line-height: 1.3rem;
-  color: beige;
+  color: #fafafa;
   font-weight: bold;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
 
   height: 100%;
 }
@@ -49,8 +49,6 @@ body {
 
   .sidebar .brand span {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: beige;
   }
 
   .sidebar .sidebar-nav {
@@ -67,7 +65,9 @@ body {
     margin-top: 10px;
   }
 
-  .sidebar .sidebar-nav .nav-icon {
+  .sidebar .sidebar-nav .nav-icon,
+  .search-icon,
+  .notification-icon {
     background-size: cover;
     background-position: center;
     width: 25px;
@@ -78,7 +78,51 @@ body {
 
   .grid-container main {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+  }
+
+  main header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 15px 35px;
+  }
+
+  main header .header-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 150px;
+  }
+
+  main header .header-bar .search-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+
+  main header .header-bar .search-bar .search {
+    background-color: rgb(230, 230, 230);
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 1rem;
+  }
+
+  main header .header-bar .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }  
+
+  main header .header-bar .user-profile .profile-picture {
+    background-size: cover;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 1.5rem;
   }
 
 

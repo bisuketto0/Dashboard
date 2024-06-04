@@ -12,18 +12,16 @@
 
   <div class="grid-container">
 
-    <aside class="sidebar" style="background-color: lightblue;">
+    <aside class="sidebar" style="background-color: rgb(83, 181, 214);">
       <div class="brand">
         <div class="logo"></div>
         <span>Dashboard</span>
       </div>
 
       <nav class="sidebar-nav">
-
         <div class="menu">
           <div class="home">
-            <div class="nav-icon" style="background-image: url(./images/home.png);"></div>Home
-          </div>
+            <div class="nav-icon" style="background-image: url(./images/home.png);"></div>Home</div>
           <div class="profile">
             <div class="nav-icon" style="background-image: url(./images/profile.png);"></div>Profile</div>
           <div class="messages">
@@ -34,7 +32,6 @@
             <div class="nav-icon" style="background-image: url(./images/tasks.png);"></div>Tasks</div>
           <div class="communities">
             <div class="nav-icon" style="background-image: url(./images/communities.png);"></div>Communities</div>
-
         </div>
 
         <div class="config-menu">
@@ -45,12 +42,29 @@
           <div class="privacy">
             <div class="nav-icon" style="background-image: url(./images/privacy.png);"></div>Privacy</div>
         </div>
-
       </nav>
     </aside>
 
-    <main style="background-color: lightcoral;">
-      <header style="background-color: brown;" class="dashboard-header"></header>
+    <main style="background-color: rgb(230, 230, 230);">
+      <header style="background-color: rgb(255, 255, 255);" class="dashboard-header">
+        <div class="header-bar">
+          <div class="search-bar">
+            <div class="search-icon" style="background-image: url(./images/search.png);"></div>
+            <input type="text" class="search">
+          </div>
+
+          <div class="user-profile" style="color: #3f3f3f;">
+            <div class="notification-icon" style="background-image: url(./images/notification.png);"></div>
+            <div class="profile-picture" style="background-image: url(./images/profile-pic.png);"></div> Bisuketto
+          </div>
+
+        </div>
+        <div class="user-action">
+          <div class="user-greetings"></div>
+          <div class="action-buttons"></div>
+        </div>
+      </header>
+      
       <section class="dashboard"></section>
     </main>
 
