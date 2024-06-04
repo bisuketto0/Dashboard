@@ -13,6 +13,8 @@ body {
   font-family: "Raleway", 'Inter', Verdana, Tahoma, sans-serif;
   font-size: 1rem;
   line-height: 1.3rem;
+  color: beige;
+  font-weight: bold;
 }
 
 .grid-container {
@@ -22,33 +24,62 @@ body {
   height: 100%;
 }
 
-.grid-container aside {
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
+/* |Sidebar */
 
-.sidebar .brand {
-  display: flex;
-  align-items: center;
-  margin: 10px;
-}
+  .grid-container aside {
+    display: grid;
+    grid-template-rows: auto 1fr;
 
-.sidebar .brand .logo {
-  background-image: url(./images/dashboard_24dp_FILL0_wght400_GRAD0_opsz24.png);
-  background-size: cover;
-  background-position: center;
+    padding: 15px;
+  }
 
-  width: 50px;
-  height: 50px;
-}
+  .sidebar .brand {
+    display: flex;
+    align-items: center;
+  }
 
-.sidebar .brand span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: beige;
-} 
+  .sidebar .brand .logo {
+    background-image: url(./images/dashboard.png);
+    background-size: cover;
+    background-position: center;
 
-.grid-container main {
-  display: grid;
-  grid-template-rows: 1fr 4fr;
-}
+    width: 50px;
+    height: 50px;
+  }
+
+  .sidebar .brand span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: beige;
+  }
+
+  .sidebar .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .sidebar .sidebar-nav .menu > div,
+  .sidebar .sidebar-nav .config-menu > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .sidebar .sidebar-nav .nav-icon {
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+  }
+
+/* |Main */
+
+  .grid-container main {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+  }
+
+
+/* |Pseudo Elements */
