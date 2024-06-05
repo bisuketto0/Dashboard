@@ -10,9 +10,9 @@
 body {
   height: 100vh;
 
-  font-family: "Raleway", 'Inter', Verdana, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Tahoma, sans-serif;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.6rem;
   color: #fafafa;
   font-weight: bold;
 }
@@ -82,13 +82,12 @@ body {
   }
 
   main header {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 15px;
 
     padding: 15px 35px;
   }
-
+  /* header-bar */
   main header .header-bar {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -117,12 +116,29 @@ body {
     gap: 18px;
   }  
 
-  main header .header-bar .user-profile .profile-picture {
+  main header .header-bar .user-profile .profile-picture,
+  main header .user-action .user-greetings .profile-picture {
+    background-image: url(./images/profile-pic.png);
     background-size: cover;
     background-position: center;
     width: 45px;
     height: 45px;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  /* user-action */
+  main header .user-action {
+    display: flex;
+  }
+
+  main header .user-action .user-greetings {
+    display: flex;
+    gap: 15px;
+  }
+
+  main header .user-action .user-greetings .profile-picture {
+    width: 60px;
+    height: 60px;
   }
 
 
