@@ -85,13 +85,15 @@ body {
     display: grid;
     gap: 15px;
 
-    padding: 15px 35px;
+    padding: 15px 50px 15px 30px;
   }
   /* header-bar */
   main header .header-bar {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 150px;
+    gap: 130px;
+
+    padding-right: 20px;
   }
 
   main header .header-bar .search-bar {
@@ -129,6 +131,8 @@ body {
   /* user-action */
   main header .user-action {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   main header .user-action .user-greetings {
@@ -137,9 +141,42 @@ body {
   }
 
   main header .user-action .user-greetings .profile-picture {
+    flex-shrink: 0;
     width: 60px;
     height: 60px;
   }
 
+  main header .user-action .action-buttons {
+    display: flex;
+    gap: 30px;
+  }
+
+  main header .user-action .action-buttons > button {
+    background-color: #53b5d6;
+    color: #fafafa;
+
+    width: 80px;
+    height: 35px;
+    padding: 10px;
+    border: 0;
+    border-radius: 1.5rem;
+
+    font: 700 .8rem sans-serif;
+    line-height: 0;
+  }
 
 /* |Pseudo Elements */
+
+
+
+
+
+
+/* 
+display stuff
+positioning stuff
+box model stuff
+typography
+manipulation
+misc
+*/
