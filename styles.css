@@ -165,6 +165,30 @@ body {
     line-height: 0;
   }
 
+/* |Dashboard */
+
+  main .dashboard {
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+
+    padding: 20px;
+  }
+
+  main .dashboard .projects {
+    grid-row: 1 / 3;
+  }
+
+  main .dashboard .projects .cards-grid {
+    display: grid;
+    grid-auto-rows: 250px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+  }
+
+  main .dashboard .projects .cards-grid .card {
+    background-color: #fafafa;
+  }
+
 /* |Pseudo Elements */
 
 
