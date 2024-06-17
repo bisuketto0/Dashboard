@@ -78,7 +78,7 @@ body {
 
   .grid-container main {
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
   }
 
   main header {
@@ -170,8 +170,14 @@ body {
   main .dashboard {
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
+    column-gap: 30px;
+    row-gap: 15px;
 
     padding: 20px;
+  }
+
+  main .dashboard h3 {
+    margin-bottom: 12px;
   }
 
   main .dashboard .projects {
@@ -187,6 +193,35 @@ body {
 
   main .dashboard .projects .cards-grid .card {
     background-color: #fafafa;
+  }
+
+  main .dashboard .announcements .announcement-grid {
+    display: grid;
+    grid-auto-rows: 80px;
+    gap: 5px;
+
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: .5rem;
+  }
+
+  main .dashboard .announcements .announcement-grid .announcement {
+    border-bottom: 1px solid #3f3f3f33;
+  }
+  
+  main .dashboard .announcements .announcement-grid .announcement:last-child {
+    border: none;
+  }
+
+  main .dashboard .announcements .announcement-grid .announcement > h4 {
+    font-size: 13px;
+  }
+
+  main .dashboard .announcements .announcement-grid .announcement > p {
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: normal;
+    color: #3f3f3fbf;
   }
 
 /* |Pseudo Elements */
