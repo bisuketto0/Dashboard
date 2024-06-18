@@ -186,13 +186,52 @@ body {
 
   main .dashboard .projects .cards-grid {
     display: grid;
-    grid-auto-rows: 250px;
+    grid-auto-rows: 220px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
   }
 
   main .dashboard .projects .cards-grid .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     background-color: #fafafa;
+    border-radius: .5rem;
+    padding: 25px;
+    border-left: 8px solid #ffbe5d;
+  }
+
+  main .dashboard .projects .cards-grid .card .info p {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #3f3f3fbf;
+  }
+
+  main .dashboard .projects .cards-grid .card .project-action {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+  }
+
+  main .dashboard .projects .cards-grid .card .project-action .fav-icon,
+  main .dashboard .projects .cards-grid .card .project-action .live-icon,
+  main .dashboard .projects .cards-grid .card .project-action .share-icon {
+    background-size: cover;
+    background-position: center;
+
+    width: 25px;
+    height: 25px;
+  }
+  main .dashboard .projects .cards-grid .card .project-action .fav-icon {
+    background-image: url(./images/fav.png);
+  }
+  main .dashboard .projects .cards-grid .card .project-action .live-icon {
+    background-image: url(./images/live.png);
+  }
+  main .dashboard .projects .cards-grid .card .project-action .share-icon {
+    background-image: url(./images/share.png);
   }
 
   main .dashboard .announcements .announcement-grid {
