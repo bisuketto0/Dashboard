@@ -224,6 +224,40 @@ body {
     color: #3f3f3fbf;
   }
 
+  main .dashboard .trending .trending-grid {
+    display: grid;
+    grid-auto-rows: 50px;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: .5rem;
+  }
+
+  main .dashboard .trending .trending-grid .user-card {
+    display: flex;
+    gap: 15px;
+  }
+
+  main .dashboard .trending .trending-grid .user-card .user-picture {
+    background-image: url(./images/profile-pic.png);
+    background-size: cover;
+    background-position: center;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 2rem;
+  }
+
+  main .dashboard .trending .trending-grid .user-card .user-info span {
+    line-height: 12px;
+  }
+
+  main .dashboard .trending .trending-grid .user-card .user-info span:nth-child(2) {
+    font-size: 12px;
+  }
+
+  
+
 /* |Pseudo Elements */
 
 
